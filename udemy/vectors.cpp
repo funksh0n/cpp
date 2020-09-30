@@ -16,6 +16,10 @@ main()
 	// for (int c : doot) cout << c << " ";
 	// for_each (doot.end(), doot.begin(), myFunction);
 	for_each (doot.begin(), doot.end(), myFunction);
+	cout << endl;
+	for (auto c : doot) cout << c << " ";
+	cout << endl;
+	for (auto c : "Sucka") cout << c << endl;
 
 	vector<int> vector1, vector2;
 	vector1.push_back(10);

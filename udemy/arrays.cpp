@@ -4,7 +4,7 @@ using namespace std;
 int
 main()
 {
-	int myArray[100];
+	int myArray[100] {};
 	cout << myArray << endl;
 	for(int i : myArray) cout << i << " ";
 	
