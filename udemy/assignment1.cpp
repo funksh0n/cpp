@@ -8,11 +8,11 @@ main(int argc, char *argv[])
 	string symbols {};
 	cout << "Enter symbols: ";
 	getline(cin, symbols);
-	int height = symbols.length();
-	int width = (height * 2) - 1;
+	size_t height { symbols.length() };
+	size_t width { (height * 2) - 1 };
 	
-	for (int row {0}; row < height; row++) {
-		for (int col {0}; col < (width / 2) - row; col++) {
+	for (size_t row {0}; row < height; row++) {
+		for (size_t col {0}; col < (width / 2) - row; col++) {
 			cout << " ";
 		}
 		string substring = symbols.substr(0, row + 1);

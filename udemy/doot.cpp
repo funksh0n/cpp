@@ -5,10 +5,10 @@ using namespace std;
 int
 main(int argc, char *argv[])
 {
-	int limit = numeric_limits<int>::max() - 1;
-	cout << limit;
-	char crazy[limit] {};
-	cout << crazy;
+	double total {102.34};
+	int guests {5};
+	double bill {total / guests};
+	cout << bill << endl;
 	return 0;
 }
 
