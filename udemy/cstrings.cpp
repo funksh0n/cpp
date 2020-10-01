@@ -5,6 +5,8 @@ using namespace std;
 int
 main(int argc, char *argv[])
 {
+	char name[6] = "Larry";
+	cout << name << endl;
 	char str[80];
 	char doot[] = { "doot" };
 	size_t doot_len = strlen(doot);
