@@ -10,8 +10,18 @@ main(int argc, char *argv[])
 	vecPointer = &vecStrings;
 	for (auto s : *vecPointer) cout << s << " ";
 
-//	int *nullPointer {nullptr};
-//	cout << *nullPointer << "... " << endl;
+	cout << endl;
+
+	/* No ampersand needed sinces array is already an address */
+	int array[] {10, 20, 30};
+	int *arrayPointer {nullptr};
+	arrayPointer = array;
+	cout << arrayPointer[0] << " ";
+
+	/* Can't dereference a null pointer.
+	int *nullPointer {nullptr};
+	cout << *nullPointer << "... " << endl;
+	*/
 	cout << endl;
 	return 0;
 }

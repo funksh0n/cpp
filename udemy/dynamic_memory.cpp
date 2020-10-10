@@ -15,8 +15,15 @@ main(int argc, char *argv[])
 	cin >> size;
 	arrDblPtr = new double[size];
 	cout << arrDblPtr << endl;
-
 	delete[] arrDblPtr;
+
+	double *derefNullPtr {nullptr};
+	cout << *derefNullPtr << endl;
+
+	/* Will run out of memory on the heap
+	double *memoryLeak {nullptr};
+	while(true) memoryLeak = new double[99999];
+	*/
 
 	return 0;
 }
