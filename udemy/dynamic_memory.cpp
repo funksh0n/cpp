@@ -14,6 +14,7 @@ main(int argc, char *argv[])
 	cout << "Input array size: ";
 	cin >> size;
 	arrDblPtr = new double[size];
+	cout << sizeof(arrDblPtr) << endl;
 	cout << arrDblPtr << endl;
 	delete[] arrDblPtr;
 

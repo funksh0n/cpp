@@ -4,7 +4,7 @@
 using namespace std;
 
 void doubleNumber(int*);
-void printVector(vector<string>*);
+void printVector(const vector<string>*);
 
 void
 doubleNumber(int *n)
@@ -13,7 +13,7 @@ doubleNumber(int *n)
 }
 
 void
-printVector(vector<string> *v)
+printVector(const vector<string> *const v)
 {
 	for (auto s : *v) cout << s << " ";
 	cout << endl;
